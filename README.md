@@ -1,2 +1,2 @@
 # Projects-for-fun
- Projects donw for fun and advanvanced programming skill
+ Projects done for fun and advanvanced programming skill
