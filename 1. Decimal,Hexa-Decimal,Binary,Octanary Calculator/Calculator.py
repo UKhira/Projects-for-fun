@@ -71,7 +71,7 @@ def decimal_to_hexa_decimal(num):
         print(10)
     else:
         while num != 1:
-            num_mod = num% 16
+            num_mod = num % 16
             list_for_mod.insert(0, num_mod)
             num= num// 16
         list_for_mod.insert(0, 1)
