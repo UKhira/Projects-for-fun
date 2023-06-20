@@ -5,20 +5,20 @@ maintance = True
 # TODO binary to decimal, octanary, hexa-decimal
 # TODO octanary to decimal, binary, hexa-decimal
 # TODO Hexa-decimal to decimal, binary, octanary
-   # if num_mod == 10:
-        #     num_mod == "A"
-        # elif num_mod == 11:
-        #     num_mod == "B"
-        # elif num_mod == 12:
-        #     num_mod == "C"
-        # elif num_mod == 13:
-        #     num_mod == "D"
-        # elif num_mod == 14:
-        #     num_mod == "E"
-        # elif num_mod == 15:
-        #     num_mod = "F"
-        # else:
-        #     num_mod = num_mod
+#    if num_mod == 10:
+#             num_mod == "A"
+#         elif num_mod == 11:
+#             num_mod == "B"
+#         elif num_mod == 12:
+#             num_mod == "C"
+#         elif num_mod == 13:
+#             num_mod == "D"
+#         elif num_mod == 14:
+#             num_mod == "E"
+#         elif num_mod == 15:
+#             num_mod = "F"
+#         else:
+#             num_mod = num_mod
 
 # ================verification section========================== 
 def decimal_verification(num):
@@ -40,10 +40,10 @@ def decimal_to_binary(num):
     if num == 1:
         print(10)
     else:
-        while num!= 1:
-            num_mod = num% 2
+        while num != 1:
+            num_mod = num % 2
             list_for_mod.insert(0, num_mod)
-            num= num// 2
+            num = num // 2
         list_for_mod.insert(0, 1)
         for index in list_for_mod:
             print(index, end = '')
@@ -56,9 +56,9 @@ def decimal_to_octanary(num):
         print(10)
     else:
         while num != 1:
-            num_mod = num% 8
+            num_mod = num % 8
             list_for_mod.insert(0, num_mod)
-            num= num// 8
+            num = num // 8
         list_for_mod.insert(0, 1)
         for index in list_for_mod:
             print(index, end = '')
@@ -72,8 +72,22 @@ def decimal_to_hexa_decimal(num):
     else:
         while num != 1:
             num_mod = num % 16
+            if num_mod == 10:
+                num_mod == "A"
+            elif num_mod == 11:
+                num_mod == "B"
+            elif num_mod == 12:
+                num_mod == "C"
+            elif num_mod == 13:
+                num_mod == "D"
+            elif num_mod == 14:
+                num_mod == "E"
+            elif num_mod == 15:
+                num_mod = "F"
+            else:
+                num_mod = num_mod
             list_for_mod.insert(0, num_mod)
-            num= num// 16
+            num = num // 16
         list_for_mod.insert(0, 1)
         for index in list_for_mod:
             print(index, end = ' ')
