@@ -32,6 +32,22 @@ body {
     background: #eee;
 }
 
+.btn {
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 4rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+
 .header{
     border: 0px solid;
     position: fixed;    /* keep navbar fixed to where it is*/
@@ -92,15 +108,20 @@ body {
     border: 0px solid;
     position: absolute;
     top: 110%;                      /* get the search box down from navbar*/
-    right: 2rem;                    /* get search box o right*/
+    right: -110%;                    /* get search box o right (we set this to minus value to hide this from user view till he click on search icon,to maintain it we need JS)*/
     width: 50rem;
-    height: 4.5rem;
+    height: 5rem;
     background: #fff;
     border-radius: .5rem;
     overflow: hidden;
     display: flex;
     align-items: center;            /* get search icon to center(vertically)*/
     box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
 }
 
 .header .search-form input {        /* this section will affect to the text box area(input) in search bar*/
@@ -114,5 +135,78 @@ body {
 }
 
 .header .search-form label {            /* this section will affect to the search icon*/
+    font-size: 2.2rem;                  /* make search icon bigger*/
+    padding-right: 1.5rem;              /* take search icon from right bit towards to left*/
+    color: var(--black);
+    cursor: pointer;
+}
 
+.header .search-form label:hover {
+    color: var(--green);
+}   
+
+.header .shopping-cart {            /* shopping cart*/
+    border: 0px solid;
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 38rem;
+    background: #fff;
+}
+
+.header .shopping-cart .box{        /* 3 box covering each 3 cart contents(images,texts)*/
+    border: 0px solid;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {       /* images cart items*/
+    height: 10rem;
+}
+
+.header .shopping-cart .box i{          /* trash icon in each part*/
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box i:hover {
+    color: var(--green);
+}
+
+.header .shopping-cart .box .content h3{        /* item names in cart*/
+    color: var(--black);
+    font-size: 1.6rem;
+    padding-bottom: 1rem;               /* to leave a space between item name and price*/
+}
+
+.header .shopping-cart .box .content span{          /* quantity, peicw*/
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
 }
