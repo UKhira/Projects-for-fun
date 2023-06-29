@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --green: green;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .1rem 1rem rgba(0,0,0.1);
+    --border: 2rem solid rgba(0,0,0.1);
+    --outline: 2rem solid rgba(0,0,0.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;                 /* start everything from left corner*/
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;    /* to remove underline of anchor tag contents*/
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: #eee;
+}
+
+.header{
+    border: 0px solid;
+    position: fixed;    /* keep navbar fixed to where it is*/
+    top: 0;             /* to get the navbar to the top of page*/
+    left: 0;            /* starts from left corner*/
+    right: 0;           /* expand till right corner*/
+    display: flex;
+    align-items: center;    /* get contents to center*/
+    justify-content: space-between;         /* leave a space between contents*/
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);          /* add a shadow effect*/
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i{
+    color: var(--green);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;             /* top and bottom margin = 0, left and right margins = 0.1rem*/
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--green);
+}
+
+.header .icons div {
+    border: 1px solid;          /* add a border with 1px width*/
+    height: 4.5rem;             /* expand content area*/
+    width: 4.5rem;              /* expand content area*/
+    line-height: 4.5rem;        /* get items to center line(vertically)*/
+    border-radius: .5rem;
+    background: #eee;          /* background color*/
+    color: var(--black);        /* content color*/
+    font-size: 2rem;            /* content size*/
+    margin-right: .3rem;        /* leave space after an item*/
+    text-align: center;         /* get items to center(horizontally)*/
+    cursor: pointer;            /* cursor will change to hand icon*/
+}
+
+.header .icons div:hover{
+    background: var(--green);       /* turn background color when mouse over*/
+    color: white;                 /* turn item color when mouse is over*/
+}
+
+#menu-btn {
+    display: none;                  /* hide menu button*/
+}
+
+.header .search-form {
+    border: 0px solid;
+    position: absolute;
+    top: 110%;                      /* get the search box down from navbar*/
+    right: 2rem;                    /* get search box o right*/
+    width: 50rem;
+    height: 4.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;            /* get search icon to center(vertically)*/
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form input {        /* this section will affect to the text box area(input) in search bar*/
+    height: 100%;               /* allow inputs to allocate full size of search box*/
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;                  /* get input text a bit from left towards center(like to leave a margin)*/
+}
+
+.header .search-form label {            /* this section will affect to the search icon*/
+
+}
