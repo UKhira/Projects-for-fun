@@ -75,6 +75,7 @@ header{
   font-weight: 600;
   padding: 30px 15px;
   transition: all 0.40s ease;
+  /* align-items: center; */
   /* backdrop-filter: blur(var(--theme-blur)) */
 }
 
@@ -93,6 +94,17 @@ header{
   margin-left: 15px;
 }
 
+#cart p{
+  height: 22px;
+  width: 22px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* border-radius: 22px; */
+  color: wheat;
+  /* background-color: gold; */
+}
+
 section{
   padding: 10px 8%;
 }
@@ -105,6 +117,41 @@ section{
   text-align: center;
   cursor: pointer;
   padding-top: 10rem;           /*get down items covering from navbar*/
+}
+
+.root {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.sidebar{
+  width: auto;
+  border-radius: 5px;
+  margin-right: 0px;
+  padding-right: 0px;
+  text-align: center;
+  float: right;
+}
+
+.head {
+  background-color: var(--theme-secondary);
+  border-radius: 4px;
+  height: 40px;
+  padding: 10%;
+  margin-bottom: 20px;
+  color: wheat;
+  display: flex;
+  align-items: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid wheat;
 }
 
 .box{
