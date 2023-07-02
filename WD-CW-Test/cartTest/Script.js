@@ -71,7 +71,7 @@ function displaycart(a){
     let j = 0; total = 0;
 
     document.getElementById("count").innerHTML = cart.length;
-    document.getElementById("total").innerHTML = "$ " + 0 +".00";
+    document.getElementById("total").innerHTML = "LKR " + 0 +".00";
 
     if(cart.length == 0){
         document.getElementById('cartItem').innerHTML = "Your Cart is empty";

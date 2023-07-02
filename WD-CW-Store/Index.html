@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
   <!-- Header start -->
   <header>
@@ -25,7 +24,7 @@
     <div class="icons">
       <!-- <a href="#"><i class="bx bx-search"></i></a>
       <a href="#"><i class="bx bxs-user-circle"></i></a> -->
-      <a href="#"><i class="bx bxs-shopping-bag" id="cart"></i><p id="count">0</p></a>
+      <a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a>
     </div>
 
   </header>
@@ -33,17 +32,16 @@
   <!-- shop start -->
   <section class="shop" id="shop">
     <div class="container">
-
-      <!-- <div class="root"></div>
+      <div id="root"></div>
       <div class="sidebar">
-        <div class="head"><p>My Cart</p></div>
-        <div class="cartItem">Your Cart is empty</div>
-        <div class="foot">
-          <h3>Total</h3>
-          <h2 class="total">LKR 0.00</h2>
-        </div>
-
-      </div> -->
+          <div class="head"><p>My Cart</p></div>
+          <div id="cartItem">Your Cart is empty</div>
+          <div class="foot">
+              <h3>Total</h3>
+              <div id="total">LKR: 0.00</div>
+          </div>
+      </div>
+  </div>
       
       <!-- <div class="box">
         <img src="movie-1.png" alt="">
@@ -54,7 +52,7 @@
         </div>
       </div> -->
 
-      <div class="box">
+      <!-- <div class="box">
         <img src="movie-2.png" alt="">
         <h4>Spiderman into the spiderverse</h4>
         <h5>LKR: 200.00</h5>
@@ -133,8 +131,9 @@
         <div class="cart">
           <a href="#"><i class="bx bx-cart"></i></a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
+  <script src="Script.js"></script>
 </body>
 </html>
