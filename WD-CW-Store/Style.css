@@ -1,8 +1,8 @@
 :root {
   /* --bg-color: #ffffff;
   --text-color: #121212;
-  --main-font: 2.2rem;
   --p-font: 1.1rem; */
+  --main-font: 2.2rem;
 
   
     --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
@@ -75,8 +75,8 @@ header{
   font-weight: 600;
   padding: 30px 15px;
   transition: all 0.40s ease;
-  /* align-items: center; */
-  /* backdrop-filter: blur(var(--theme-blur)) */
+  align-items: center;
+  backdrop-filter: blur(var(--theme-blur))
 }
 
 .navbar a:hover {
@@ -88,7 +88,7 @@ header{
   display: inline-block;
 }
 
-.icons i {
+.icons i,p {
   color: var(--theme-white);
   font-size: 24px;
   margin-left: 15px;
