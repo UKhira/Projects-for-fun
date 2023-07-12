@@ -10,4 +10,4 @@ theme_selector.addEventListener("change", function () {
     } else if (theme == "butter") {
         document.getElementById("theme").setAttribute("href", "css/theme-butter.css");
     }
-});
+})

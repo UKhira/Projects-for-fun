@@ -108,7 +108,7 @@ function displaycart(cartIcon){
                 </div>
                 <p style='font-size: 13px;'>${title}</p>
                 <p style='font-size: 13px;'>LKR: ${price}.00</p>` +
-                "<i class = 'fa fa-trash' style='color: gold;' onclick='delElement("+ (j++) +")'></i></div>"
+                "<i class='bx bx-trash' style='color: gold;' onclick='delElement(" + (j++) + ")'></i></div>"
             );
         }).join('');
     }

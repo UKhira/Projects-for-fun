@@ -218,17 +218,22 @@ li select{
   transition: all 0.2s ease-in-out !important;
 }
 
+.bxs-shopping-bag{
+  margin-left: 28rem;
+}
+
 .bx-cart:hover{
   color: red;
 }
 
-#count{
-  height: 22px;
+span{
+  height: auto;
+  margin-left: 28rem;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: px;
+  /* border-radius: px; */
   background: var(--theme-secondary);
 }
 
@@ -341,7 +346,7 @@ section{
 .row-img{
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 60px;
   border: 1px solid var(--theme-white);
   display: flex;
   align-items: center;
@@ -349,14 +354,14 @@ section{
 }
 
 .rowimg{
-  max-width: 43px;
-  max-height: 43px;
+  width: 40px;
+  height: 50px;
   border-radius: 50%;
 }
 
-.fa-trash:hover{
+.bx-trash:hover{
   cursor: pointer;
-  color: #333;
+  transform: scale(1.5);
 }
 
 
